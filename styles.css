@@ -1,7 +1,21 @@
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
 body {
-  height: 200vh;
   width: 100%;
-  background: linear-gradient(180deg, #9DBDAD 0%, #022D33 100%);
+  height: 300vh;
+  margin: 0;
+}
+.section {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+#title {
+  top: 0vh;
+  bottom: 100vh;
+  background-color: #9DBDAD;
 }
 h1 {
   font-family: 'Libre Baskerville', serif;
@@ -14,30 +28,41 @@ h1 {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 20%;
+  margin: 0;
   color: #00171B;
 }
 h2 {
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: normal;
+  margin: 0;
+
+  font-weight: lighter;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   color: #00171B;
 }
+#counter-widget {
+  top: 100vh;
+  background: linear-gradient(180deg, #9DBDAD 0%, #022D33 100%);
+  bottom: 200vh;
+  text-align: center;
+}
 h3 {
   font-family: 'Raleway';
+  margin: 0;
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
   line-height: 75px;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 7%;
   color: #E8DADE;
 }
+
 .container {
   display: grid;
-  padding-top: 7%;
+  padding-top: 10%;
   grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows:auto;
   grid-gap: 20px;
@@ -58,4 +83,56 @@ h3 {
   font-style: normal;
   font-weight: normal;
   font-size: 1em;
+}
+.dive-in {
+  border: 2.5px solid #E8DADE;
+  border-radius: 50%;
+  font-family: 'Raleway';
+  color: #E8DADE;
+  width: 75px;
+  height: 75px;
+  margin-top: 10%;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 1em;
+}
+#abstract {
+  top: 200vh;
+  bottom: 300vh;
+  background-color: #022D33;
+}
+.abstract-text {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  font-size: 1.5em;
+  line-height: 1.15em;
+  justify-content: center;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0;
+  color: #E8DADE;
+}
+#abstract mark {
+  background-color: #022D33;
+  color: #89043d;
+
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #ddd 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  transition: background-position 1s ease-out;
+}
+.container2 {
+  display: grid;
+  padding-top: 5%;
+  grid-template-columns: 140px 140px 140px;
+  grid-template-rows:auto;
+  grid-gap: 100px;
+  justify-content: center;
+}
+img {
+  width: 140px;
+  display: flex;
+  align: middle;
+  cursor: pointer;
 }
