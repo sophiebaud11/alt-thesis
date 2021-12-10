@@ -58,14 +58,3 @@ const runAnimations = () => {
   const countupEls = document.querySelectorAll( '.countup' );
   countupEls.forEach( animateCountUp );
 };
-
-function highlighter(text_to_highlight) {
-	text_to_highlight.style.backgroundPosition = "-99.99% 0";
-}
-function runHighlights() {
-	console.log("running highlights")
-	var highlight1 = document.querySelector("#highlight1");
-	var highlight2 = document.querySelector("#highlight2");
-	setTimeout(highlighter, 1000, highlight1)
-	setTimeout(highlighter, 5000, highlight2)
-}
