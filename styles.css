@@ -4,7 +4,7 @@ html {
 }
 body {
   width: 100%;
-  /* height: 200vh; */
+  height: 200vh;
   margin: 0;
 }
 .background-img {
@@ -17,6 +17,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#abstract-background-color {
+  background-color: #E5E5E5;
 }
 .section {
   margin: 0;
@@ -46,6 +49,23 @@ body {
   background-color: #022D33;
   box-shadow: 3px 3px  #698487;
   text-shadow: 0px 2px 2px #698487;
+}
+#topnav-chap1 {
+  background-color: #331E38;
+  box-shadow: 3px 3px  #706993;
+  text-shadow: 0px 2px 2px #706993;
+
+}
+#topnav-chap2 {
+  background-color: #18314F;
+  box-shadow: 3px 3px  #1B512D;
+  text-shadow: 0px 2px 2px #1B512D;
+}
+#topnav-chap3 {
+  background-color: #022D33;
+  box-shadow: 3px 3px  #89043D;
+  text-shadow: 0px 2px 2px #89043D;
+
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -117,13 +137,17 @@ h2 {
 }
 h3 {
   font-family: 'Raleway';
-  margin: 0;
   font-style: normal;
   font-weight: 800;
   font-size: 56px;
   line-height: 75px;
   text-align: center;
-  padding-top: 7%;
+  max-width: 50%;
+  margin-left: auto;
+  margin-top: 0;
+  margin-right: auto;
+  display: block;
+  padding-top: 5%;
   color: #E5E5E5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -222,15 +246,15 @@ h3 {
 }
 .abstract-text {
   text-align: center;
-  top: 6vh;
+  /* top: 6vh; */
   position: relative;
   z-index: 0;
   font-family: 'Libre Baskerville';
   font-size: 1.5em;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 7%;
+  padding-bottom: 3%;
   margin: 0;
   line-height: 1.5em;
   color: #022D33;
@@ -240,6 +264,7 @@ h3 {
 #abstract mark {
   background-color: #E5E5E5;
   color: #022D33;
+  top: 0;
   background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgb(137, 4, 61, 0.4) 50%);
   background-position: -0% 0;
   /* height: 30%;
@@ -253,17 +278,25 @@ h3 {
 
 }
 #chapter-args {
-  background-color: #E5E5E5;
+  top: 100vh;
+  /* background-color: #E5E5E5; */
 }
 #chapter-args h3 {
   padding-top: 5%;
   color: #022D33;
 }
+#abstract h3 {
+  padding-top: 5%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #022D33;
+}
+
 .container3 {
   width:100%;
   height:50vh;
   display: flex;
-  padding-top: 6%;
+  padding-top: 1%;
   justify-content: center;
   align-items: center;
 }
@@ -409,6 +442,7 @@ h3 {
   padding: 15px 30px;
   font-size: 16px;
   letter-spacing:1px;
+  margin: 0;
   border-radius: 50px;
   bottom: -50px;
   display: inline-block;
@@ -436,4 +470,120 @@ img {
   display: flex;
   align: middle;
   cursor: pointer;
+}
+#chap1-background-color {
+  background-color: #EFE3E2;
+}
+#chap1-context h3 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  color: #331E38;
+  max-width: 50%;
+
+  margin-bottom: 0;
+}
+#chap1-context h2 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  color: #706993;
+  margin-top: 0;
+  font-size: 1.75em;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chapter-container {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  height: 400px;
+  grid-template-rows:auto;
+  padding-top: 2%;
+  grid-gap: 50px;
+  text-align: center;
+  justify-content: center;
+
+}
+.coverimg {
+  height: 400px;
+  width: auto;
+  padding-left: 20%;
+}
+.minicontainer {
+  display: grid;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: repeat(3, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: left;
+}
+.context p {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #331E38;
+}
+.icon-text img {
+  width: 60px;
+}
+.icon-text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  /* line-height: 42px; */
+  vertical-align: middle;
+  text-align: left;
+  color: #706993;
+}
+#chap2-background-color {
+  background-color: #F0EBD2;
+}
+
+#chap2-context h3 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  color: #18314F;
+  max-width: 50%;
+
+  margin-bottom: 0;
+}
+#chap2-context h2 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  color: #1B512D;
+  margin-top: 0;
+  font-size: 1.75em;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#chap3-background-color {
+  background-color: #EBF5EE;
+}
+
+#chap3-context h3 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: bold;
+  color: #89043D;
+  max-width: 50%;
+
+  margin-bottom: 0;
+}
+#chap3-context h2 {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  color: #022D33;
+  margin-top: 0;
+  font-size: 1.75em;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
