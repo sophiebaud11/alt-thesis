@@ -29,7 +29,7 @@ body {
 .topnav {
   overflow: hidden;
   font-family: 'Raleway';
-  width: 100%;
+  width: 100vw;
   padding: 0px 8px;
   position: fixed;
   top: 0px;
@@ -42,28 +42,28 @@ body {
 }
 #topnav-opening {
   background-color: #221A15;
-  box-shadow: 3px 3px  #827268;
+  box-shadow: 0px 3px  #827268;
   text-shadow: 0px 2px 2px #827268;
 }
 #topnav-abstract {
   background-color: #022D33;
-  box-shadow: 3px 3px  #698487;
+  box-shadow: 0px 3px  #698487;
   text-shadow: 0px 2px 2px #698487;
 }
 #topnav-chap1 {
   background-color: #331E38;
-  box-shadow: 3px 3px  #706993;
+  box-shadow: 0px 3px  #706993;
   text-shadow: 0px 2px 2px #706993;
 
 }
 #topnav-chap2 {
   background-color: #18314F;
-  box-shadow: 3px 3px  #1B512D;
+  box-shadow: 0px 3px  #1B512D;
   text-shadow: 0px 2px 2px #1B512D;
 }
 #topnav-chap3 {
   background-color: #022D33;
-  box-shadow: 3px 3px  #89043D;
+  box-shadow: 0px 3px  #89043D;
   text-shadow: 0px 2px 2px #89043D;
 
 }
@@ -474,13 +474,11 @@ img {
 #chap1-background-color {
   background-color: #EFE3E2;
 }
-#chap1-context h3 {
+#chap1-background-color h3 {
   font-family: Libre Baskerville;
   font-style: normal;
   font-weight: bold;
   color: #331E38;
-  max-width: 50%;
-
   margin-bottom: 0;
 }
 #chap1-context h2 {
@@ -511,7 +509,7 @@ img {
 }
 .minicontainer {
   display: grid;
-  grid-template-columns: 100px 300px;
+  grid-template-columns: 25% 75%;
   grid-template-rows: repeat(3, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -541,16 +539,64 @@ img {
   text-align: left;
   color: #706993;
 }
+#chap1arg1text {
+  height: 65%;
+  width: 100%;
+  padding-top: 2%;
+  margin-left: -2.5%;
+  display: block;
+  cursor: auto;
+}
+#chap1arg2text {
+  height: 75%;
+  width: 100%;
+  padding-top: 8%;
+  margin-left: 3%;
+  display: block;
+  cursor: auto;
+}
+#chap2arg1text {
+  height: 65%;
+  width: 100%;
+  padding-top: 2%;
+  margin-left: 1.5%;
+  display: block;
+  cursor: auto;
+
+}
+#chap2arg2text {
+  height: 65%;
+  width: 100%;
+  padding-top: 7%;
+  margin-left: -2%;
+  display: block;
+  cursor: auto;
+}
+#chap3arg1text {
+  height: 65%;
+  width: 100%;
+  padding-top: 3%;
+  margin-left: 4%;
+  display: block;
+  cursor: auto;
+}
+#chap3arg2text {
+  height: 65%;
+  width: 100%;
+  padding-top: 7%;
+  display: block;
+  cursor: auto;
+}
+
 #chap2-background-color {
   background-color: #F0EBD2;
 }
 
-#chap2-context h3 {
+#chap2-background-color h3 {
   font-family: Libre Baskerville;
   font-style: normal;
   font-weight: bold;
   color: #18314F;
-  max-width: 50%;
 
   margin-bottom: 0;
 }
@@ -568,13 +614,11 @@ img {
   background-color: #EBF5EE;
 }
 
-#chap3-context h3 {
+#chap3-background-color h3 {
   font-family: Libre Baskerville;
   font-style: normal;
   font-weight: bold;
   color: #89043D;
-  max-width: 50%;
-
   margin-bottom: 0;
 }
 #chap3-context h2 {
